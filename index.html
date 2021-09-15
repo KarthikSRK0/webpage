@@ -62,23 +62,15 @@ I possess basic knowledge of Programing languages and I assure you that I will q
           </div>
         </div>
       </section>
-      <section class='contactForm' id='contactForm' enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfhZx4d_AqsUbEzoF_0nhebwESYpszXDMcrkJhjH_FP7vcogA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-        <h1>Let's Connect!</h2>
-        <div class='formGroup'>
-          <label for='name'>Enter Full Name</label><br/>
-          <input type='text' name="entry.2015854424" id='entry.2015854424' placeholder='Full Name'/>
-        </div>
-        <div class='formGroup'>
-          <label for='email'>Email</label><br/>
-          <input type='text' id='entry.651207437' placeholder='Email'/>
-        </div>
-        <div class='formGroup'>
-          <label for='message'>Message</label><br/>
-          <textarea placeholder="Send some message!" id="entry.642425722" name="entry.642425722" rows="4" cols="50"></textarea>
-        </div>
-        <button class='submitButton' onClick={submit()}>Connect</button>
-      </section>
-     <<script src="assets/js/jquery.min.js"></script>
+     <form name="gform" id="gform" ectioenctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfhZx4d_AqsUbEzoF_0nhebwESYpszXDMcrkJhjH_FP7vcogA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+       Name:<br>
+  <input type="text" name="entry.2015854424" id="entry.2015854424"><br>
+  Email id:<br>
+  <input type="text" name="entry.651207437" id="entry.651207437">
+    Message:<br>
+  <input type="text" name="entry.642425722" id="entry.642425722">
+  <input type="submit" value="Submit">
+       <script src="assets/js/jquery.min.js"></script>
 <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
 $('#gform').on('submit', function(e) {
@@ -86,8 +78,11 @@ $('#gform').on('submit', function(e) {
   $('#gform').prepend('Your submission has been processed...');
   });
 </script>
-iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-     
+
+</form>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
      </main>
     <script src="script.js"></script>
   </body>
